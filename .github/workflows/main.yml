@@ -1,7 +1,9 @@
+#main.yml
+
 on:
   push:
     branches:
-      - main
+      - master
 
 name: Deploy
 
