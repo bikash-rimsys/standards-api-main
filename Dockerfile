@@ -44,6 +44,7 @@ ADD ./docker/nginx /etc/nginx
 
 WORKDIR /var/www/app
 
+RUN php artisan key:generate
 RUN chown -R www-data:www-data /var/www/app
 
 RUN mkdir /run/php
