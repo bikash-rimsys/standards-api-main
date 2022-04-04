@@ -40,6 +40,9 @@ jobs:
       run: |
           echo $RELEASE_VERSION
           echo ${{ steps.vars.outputs.tag }}
+    - name: Create .env file from .env.example
+      run: |
+        cp -R ./.env.example ./.env
           
     - name: Validate composer
       run: |
